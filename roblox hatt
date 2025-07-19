@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Loading..",
    LoadingSubtitle = "by antlar",
    ShowText = "Open Antler Hub Free", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
@@ -37,12 +37,14 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Roblox Shooting Games", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("roblox shooting games", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "Rivals, Arsenal More(key system)",
+   Name = "Rivals, arsenal more(key system)",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/gcUsjvks"))()
+   end,
+})
 
 local Tab = Window:CreateTab("Steal A Brainrot", 4483362458) -- Title, Image
 
@@ -50,9 +52,6 @@ local Button = Tab:CreateButton({
    Name = "Steal A Brainrot( Probably Down RN)",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Steal-a-Brianrot/refs/heads/main/ArbixHubBEST.lua"))()
-   end,
-})
-
    end,
 })
 
@@ -88,4 +87,13 @@ Rayfield:Notify({
    Content = "If any Script Patched, DM the Owner(Antlar) on the Discord Server",
    Duration = 7.5,
    Image = 4483362458,
+})
+
+local Tab = Window:CreateTab("Steal A Brainrot", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Steal A Brainrot( Probably Down RN)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Steal-a-Brianrot/refs/heads/main/ArbixHubBEST.lua"))()
+   end,
 })
