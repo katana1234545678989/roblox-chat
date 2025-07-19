@@ -5,8 +5,8 @@ local Window = Rayfield:CreateWindow({
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Loading..",
    LoadingSubtitle = "by antlar",
-   ShowText = "close antler hub Free", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   ShowText = "Open Antler Hub Free", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
@@ -37,14 +37,24 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Roblox Shooting Games", 4483362458) -- Title, Image
 
-local Tab = Window:CreateTab("roblox shooting games", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Roblox Shooting Games", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "Rivals, arsenal more",
+   Name = "Rivals, Arsenal More(key system)",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/gcUsjvks"))()
+
+local Tab = Window:CreateTab("Steal A Brainrot", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Steal A Brainrot( Probably Down RN)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Steal-a-Brianrot/refs/heads/main/ArbixHubBEST.lua"))()
+   end,
+})
+
    end,
 })
 
@@ -66,11 +76,18 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Fair Thingy", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Infinite Yield", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "Fair Thingy",
+   Name = "Infinite Yield",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
+})
+
+Rayfield:Notify({
+   Title = "Script Patching",
+   Content = "If any Script Patched, DM the Owner(Antlar) on the Discord Server",
+   Duration = 7.5,
+   Image = 4483362458,
 })
