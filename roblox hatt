@@ -39,8 +39,6 @@ local Window = Rayfield:CreateWindow({
 
 local Tab = Window:CreateTab("Roblox Shooting Games", 4483362458) -- Title, Image
 
-local Tab = Window:CreateTab("Roblox Shooting Games", 4483362458) -- Title, Image
-
 local Button = Tab:CreateButton({
    Name = "Rivals, Arsenal More(key system)",
    Callback = function()
